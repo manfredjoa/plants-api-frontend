@@ -1,4 +1,29 @@
-.App {
+* {
+  background: rgb(56, 101, 56);
+  color: lemonchiffon;
+}
+
+.plants-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plants-container {
+  display: grid;
+  grid-template: repeat(28, 1fr) / repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.individualPlantDiv {
   text-align: center;
+}
+
+.plant-images {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  border: 2px solid lemonchiffon;
+  border-radius: 5%;
 }
 

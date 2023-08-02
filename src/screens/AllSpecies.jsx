@@ -15,7 +15,7 @@ export default function AllSpecies() {
   }
 
   return (
-    <div>
+    <div className="plants-screen">
       <h1>Plant Species</h1>
       <div className="plants-container">
         {species.map((eachSpecies) => (
