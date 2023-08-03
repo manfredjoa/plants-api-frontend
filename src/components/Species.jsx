@@ -11,7 +11,7 @@ export default function Species({ species }) {
   return (
     <div className="individualPlantDiv">
       <img className="plant-images" onClick={showModal} src={species.image} alt={species.speciesName} />
-      <p>{species.speciesName}</p>
+      <p className="species-name" onClick={showModal}>{species.speciesName}</p>
       {modal ? <Modal species={species}  /> : <></> }
     </div>
   )

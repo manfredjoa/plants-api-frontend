@@ -9,9 +9,9 @@ export default function Modal({ species }) {
         <img className="modal-image" src={species.image}></img>
 
         <div>
-          <p>{species.speciesName}</p>
-          <p>{species.commonName}</p>
-          <p>{species.genusName}</p>
+          <p className="modal-text">Species name: {species.speciesName}</p>
+          <p className="modal-text">Common name: {species.commonName}</p>
+          <p className="modal-text">Genus name: {species.genusName}</p>
         </div>
 
         <button>x</button>
