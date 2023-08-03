@@ -26,6 +26,12 @@ export default function AllSpecies() {
     setModal(false)
   }
 
+  const closeModalKeyDown = (e) => {
+    if (e.key === "Escape") {
+      setModal(false)
+    }
+  }
+    
   return (
     <div className="plants-screen">
       <h1>Plant Species</h1>
@@ -34,7 +40,7 @@ export default function AllSpecies() {
           <Species species={eachSpecies} key={eachSpecies._id} showModal={showModal} />
         ))}
       </div>
-      {modal ? <Modal species={oneSpecies} closeModal={closeModal} /> : null }
+      {modal ? <Modal species={oneSpecies} closeModal={closeModal} closeModalKeyDown={closeModalKeyDown}/> : null }
     </div>
   )
 }
