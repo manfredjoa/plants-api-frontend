@@ -4,7 +4,7 @@ let apiUrl;
 
 const apiUrls = {
   production: "https://manfredjoa-plants-api-56ca2fc58166.herokuapp.com/api/",
-  development: "http://localhost:3000/api",
+  development: "https://manfredjoa-plants-api-56ca2fc58166.herokuapp.com/api/",
 };
 
 if (window.location.hostname === "localhost") {

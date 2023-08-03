@@ -1,6 +1,11 @@
 * {
   background: rgb(56, 101, 56);
   color: lemonchiffon;
+  font-family: 'flower3', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
 }
 
 .plants-screen {
@@ -17,11 +22,12 @@
 
 .individualPlantDiv {
   text-align: center;
+  font-size: 25px;
 }
 
 .plant-images {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-size: cover;
   border: 2px solid lemonchiffon;
   border-radius: 5%;
