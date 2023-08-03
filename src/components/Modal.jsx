@@ -8,9 +8,9 @@ export default function Modal({ species, closeModal, closeModalKeyDown }) {
   }, [])
 
   return (
-    <div tabIndex={0} ref={ref} onKeyDown={closeModalKeyDown}>
+    <div>
       <div className="overlay hidden" onClick={closeModal}></div>
-      <div className="modal-container">
+      <div tabIndex={-1} ref={ref} onKeyDown={closeModalKeyDown} className="modal-container">
 
         <img className="modal-image" src={species.image}></img>
 
