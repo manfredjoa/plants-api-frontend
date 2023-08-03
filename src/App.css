@@ -53,8 +53,8 @@ object-position: top;
 }
 
 .modal-container {
-  border: 1px solid lemonchiffon;
-  position: absolute;
+  border: 2px solid lemonchiffon;
+  position: fixed;
   height: 50%;
   width: 50%;
   top: 25vh;
@@ -67,14 +67,17 @@ object-position: top;
 .modal-image {
   height: 50vh;
   width: 50vh;
+  border-right: 2px solid lemonchiffon;
 }
 
 button {
   border-radius: 50%;
   font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid lemonchiffon;
+  border: 2px solid lemonchiffon;
   align-self: flex-start;
   justify-self: flex-end;
+  margin-top: -23px;
+  margin-right: -23px;
 }
 
 .plant-images, .species-name, button {
