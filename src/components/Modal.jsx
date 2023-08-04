@@ -16,7 +16,9 @@ export default function Modal({ species, closeModal, closeModalKeyDown }) {
 
         <div>
           <p className="modal-text">Species name: {species.speciesName}</p>
-          <p className="modal-text">Common name: {species.commonName}</p>
+          {species.commonName === ""
+            ? <p className="modal-text">Common name: N/A</p>
+            : <p className="modal-text">Common name: {species.commonName}</p>}
           <p className="modal-text">Genus name: {species.genusName}</p>
         </div>
 
