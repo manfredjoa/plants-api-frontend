@@ -10,13 +10,18 @@ h1 {
   letter-spacing: 10px;
 }
 
-h1, .species-name {
+h1 {
   text-shadow: 3px 3px black;
   font-weight: bold;
 }
 
 h2, .modal-text {
   font-size: 30px;
+}
+
+.species-name {
+  text-shadow: 2px 2px black;
+  font-weight: bold;
 }
 
 .home-screen, .plants-screen {

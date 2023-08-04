@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { getSpecies } from "../services/species.js";
+import { Link } from "react-router-dom";
 import Species from "../components/Species.jsx"
 import Modal from "../components/Modal.jsx";
 
@@ -34,7 +35,9 @@ export default function AllSpecies() {
     
   return (
     <div className="plants-screen">
-      <h1>Plant Species</h1>
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <h1>Plant Species</h1>
+      </Link>
       <div className="plants-container">
         {species.map((eachSpecies) => (
           <Species species={eachSpecies} key={eachSpecies._id} showModal={showModal} />
